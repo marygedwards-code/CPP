@@ -1,0 +1,94 @@
+from datetime import date
+
+def create_webpage():
+    today = date.today()
+
+    html_content = f"""
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SkyPlan - Class Project Proposal</title>
+    <style>
+        body {{
+            font-family: Arial;
+            margin: 40px;
+            line-height: 1.6;
+        }}
+        h1 {{
+            color: #2c3e50;
+        }}
+        h2 {{
+            margin-top: 25px;
+            color: #34495e;
+        }}
+    </style>
+</head>
+
+<body>
+
+    <h1>Start to Finish</h1>
+
+    <h2>Team Members</h2>
+    <p>Madie, Kailyn, Enrique, and Francisco</p>
+
+    <h2>Application Overview</h2>
+    <p>
+        Start to Finish is a running app that helps people who want to enahnce thier running perfornaces. 
+      It records, pace, distance, and time to keep runners on pace. It also gives feedback during your runs, 
+      like when you slow down or speed up. It helps runners avoid overtraining or undertraining by suggesting 
+      rest days or harder workouts and showing their progress over time.
+    </p>
+
+    <h2>Technology Overview</h2>
+    <p>
+        HTML, CSS, JavaScript
+Python for backend
+GPS tracking from phone
+Basic data analysis for performance trends
+Hosted on GitHub Pages or Render
+    </p>
+
+    <h2>Proposal Last Updated</h2>
+    <p>April 15th, 2026</p>
+
+    <h2>Feature List (Prioritized)</h2>
+    <ul>
+        <li>Track distance, pace, and time
+        </li>Show real-time pace updates</li>
+        <li>Weekly progress summaries</li>
+        <li>Goal setting (5K, 10K, etc.)</li>
+        <li>Running history log</li>
+    </ul>
+
+    <h2>Future Feature List</h2>
+    <ul>
+        <li>AI running coach</li>
+        <li>Injury warning based on running habits</li>
+        <li>music that paches running pace</li>
+    </ul>
+
+    <h2>Basic Technical Features</h2>
+    <ul>
+        <li>GPS tracking</li>
+        <li>simple dashboard</li>
+        <li>User input for goals</li>
+    </ul>
+
+    <h2>Advanced Technical Features</h2>
+    <ul>
+        <li>Predict performace using data trends</li>
+        <li>real-time feedback during runs</li>
+        <li>creat custom training plans</li>
+    </ul>
+
+</body>
+</html>
+"""
+
+    with open("index.html", "w", encoding="utf-8") as file:
+        file.write(html_content)
+
+    print("index.html created successfully!")
+
+if __name__ == "__main__":
+    create_webpage()
