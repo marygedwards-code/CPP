@@ -1,25 +1,21 @@
-from datetime import date
-
-def create_webpage():
-    today = date.today()
-
-    html_content = f"""
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SkyPlan - Class Project Proposal</title>
+    <title>Start to Finish - Class Project Proposal</title>
     <style>
-        body {{
-            font-family: Arial;
+        body {
+    text-align: center;
+}
+            font-family: Comfortaa;
             margin: 40px;
             line-height: 1.6;
         }}
         h1 {{
-            color: #2c3e50;
+            color: \033[95m;
         }}
         h2 {{
             margin-top: 25px;
-            color: #34495e;
+            color: \033[95m;
         }}
     </style>
 </head>
@@ -85,10 +81,4 @@ Hosted on GitHub Pages or Render
 </html>
 """
 
-    with open("index.html", "w", encoding="utf-8") as file:
-        file.write(html_content)
 
-    print("index.html created successfully!")
-
-if __name__ == "__main__":
-    create_webpage()
